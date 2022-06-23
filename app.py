@@ -25,8 +25,8 @@ def create_tables():
 
 api.add_resource(UserRegister, '/register')
 api.add_resource(User, '/user')
-api.add_resource(Facebook, '/store/<string:name>')
-api.add_resource(FacebookCampaignList, '/stores')
+api.add_resource(Facebook, '/campaign/<string:name>')
+api.add_resource(FacebookCampaignList, '/facebookcampaigns')
 
 if __name__ == '__main__':
     app.run(debug=True)
